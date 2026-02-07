@@ -2,7 +2,7 @@ import { ArrowRight, Play, CheckCircle } from "lucide-react";
 
 export function WorkflowSection() {
   return (
-    <section className="bg-[#020204] py-24 relative overflow-hidden border-t border-white/5">
+    <section className="py-24 bg-linear-to-b from-[#020204] to-[#0A0A0A] border-t border-white/5 relative overflow-hidden z-10">
       <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-sky-950/10 to-transparent pointer-events-none"></div>
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
@@ -24,7 +24,7 @@ export function WorkflowSection() {
             {/* Step 1 */}
             <div className="text-center group">
               <div className="relative z-10 w-24 h-24 mx-auto rounded-2xl bg-black border border-white/10 flex items-center justify-center mb-6 shadow-2xl group-hover:scale-105 transition-transform duration-300 group-hover:border-sky-500/50">
-                <div className="absolute inset-0 bg-sky-500/5 blur-xl group-hover:opacity-100 transition-opacity opacity-0 rounded-full"></div>
+                <div className="w-16 h-1 bg-linear-to-r from-sky-500 to-indigo-500 rounded-full mb-6"></div>
                 <div className="text-4xl font-bold text-sky-500/20 group-hover:text-sky-500 transition-colors">
                   1
                 </div>

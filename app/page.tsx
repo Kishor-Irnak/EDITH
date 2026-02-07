@@ -24,7 +24,7 @@ export default function EdithLandingPage() {
     <div className="antialiased selection:bg-sky-500 selection:text-white overflow-x-hidden min-h-screen text-neutral-300 bg-[#020204] relative font-sans">
       {/* Background Elements */}
       <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#020204]/50 to-[#020204]"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-transparent via-[#020204]/50 to-[#020204]"></div>
         <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full blur-[120px] mix-blend-screen z-10 bg-sky-900/10"></div>
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full blur-[120px] mix-blend-screen z-10 bg-indigo-900/10"></div>
         <Constellation />
@@ -198,7 +198,7 @@ export default function EdithLandingPage() {
 
                 {/* Main Canvas (Flow Builder) */}
                 <main className="md:col-span-8 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] bg-opacity-5 relative">
-                  <div className="absolute inset-0 bg-[radial-gradient(#1f2937_1px,transparent_1px)] [background-size:20px_20px] opacity-20"></div>
+                  <div className="absolute inset-0 bg-[radial-gradient(#1f2937_1px,transparent_1px)] bg-size-[20px_20px] opacity-20"></div>
 
                   {/* Flow Nodes Visualization */}
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -351,9 +351,9 @@ export default function EdithLandingPage() {
             {/* Mobile Preview Overlay */}
             <div className="pointer-events-none absolute -bottom-6 right-10 hidden w-64 rounded-xl border border-white/10 bg-black/60 p-2 backdrop-blur-xl lg:block shadow-2xl transform rotate-[-5deg] hover:rotate-0 transition-transform duration-500 z-20">
               <div className="rounded-lg border border-white/10 bg-black/80 overflow-hidden relative">
-                <div className="aspect-[9/16] bg-[#0A0A0A] p-4 flex flex-col items-center pt-10">
+                <div className="aspect-9/16 bg-[#0A0A0A] p-4 flex flex-col items-center pt-10">
                   {/* Fake Phone UI */}
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 to-indigo-600 mb-4 animate-pulse shadow-[0_0_30px_rgba(168,85,247,0.4)]"></div>
+                  <div className="w-16 h-16 rounded-full bg-linear-to-br from-purple-500 to-indigo-600 mb-4 animate-pulse shadow-[0_0_30px_rgba(168,85,247,0.4)]"></div>
                   <div className="text-white font-medium mb-1">
                     Incoming Call...
                   </div>
@@ -363,7 +363,7 @@ export default function EdithLandingPage() {
 
                   <div className="w-full flex justify-between px-4 mt-auto mb-8">
                     <div className="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center text-red-500 border border-red-500/30">
-                      <PhoneCall className="w-5 h-5 rotate-[135deg]" />
+                      <PhoneCall className="w-5 h-5 rotate-135" />
                     </div>
                     <div className="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center text-white shadow-[0_0_20px_rgba(34,197,94,0.4)]">
                       <PhoneCall className="w-5 h-5" />

@@ -13,12 +13,13 @@ import {
 
 export function FeaturesGrid() {
   return (
-    <section className="bg-[#020204] py-24 relative z-10 border-t border-white/5">
+    <section className="py-24 bg-linear-to-b from-[#020204] to-[#0A0A0A] border-t border-white/5 relative overflow-hidden z-10">
       <div className="max-w-6xl mx-auto px-6">
         <div className="mb-16 text-center">
           <h2 className="md:text-4xl text-3xl font-semibold text-white tracking-tight mb-6">
             Engineered for conversation.
           </h2>
+          <div className="w-16 h-1 bg-linear-to-r from-sky-500 to-indigo-500 rounded-full mx-auto mb-6"></div>
           <p className="max-w-2xl mx-auto text-neutral-400 font-normal md:text-lg">
             We've stripped away the complexity to give you raw, unfiltered
             access to the world's most capable voice AI.
@@ -58,6 +59,8 @@ export function FeaturesGrid() {
           />
         </div>
       </div>
+      {/* Background Graphic */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-sky-600/10 blur-[120px] rounded-full pointer-events-none z-0"></div>
     </section>
   );
 }
@@ -72,7 +75,7 @@ function FeatureCard({
   description: string;
 }) {
   return (
-    <div className="group p-8 rounded-2xl glass-panel hover:bg-white/[0.02] transition-all duration-300 border border-white/5 hover:border-white/10 hover:shadow-lg hover:shadow-sky-500/5">
+    <div className="group p-8 rounded-2xl glass-panel hover:bg-white/2 transition-all duration-300 border border-white/5 hover:border-white/10 hover:shadow-lg hover:shadow-sky-500/5">
       <div className="w-12 h-12 rounded-xl border flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 bg-neutral-900/50 border-white/10 shadow-[0_0_15px_rgba(0,0,0,0.5)]">
         {icon}
       </div>
